@@ -1,0 +1,23 @@
+{
+    "kind": "Service",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "nginx-https"
+    },
+    "spec": {
+        "selector": {
+            "app": "nginx"
+        },
+        "ports": [
+            {
+                "name": "https",
+                "protocol": "TCP",
+                "port": 443,
+                "targetPort": 443
+            }
+        ],
+        "externalIPs" : [
+            "100.22.1.143"
+        ]
+    }
+}
