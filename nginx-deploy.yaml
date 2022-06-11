@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: linuxcloudops/nginx_modsecurity
+        image: linuxcloudops/nginx_modsecurity:cert
         ports:
         - containerPort: 80
         - containerPort: 443
